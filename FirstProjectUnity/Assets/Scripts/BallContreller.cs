@@ -21,6 +21,6 @@ public class BallContreller : MonoBehaviour
         hInput = Input.GetAxis("Horizontal");
         vInput = Input.GetAxis("Vertical");
 
-        transform.position += new Vector3(hInput * speed * Time.deltaTime, 0, 0);
+        transform.position += new Vector3(hInput * speed * Time.deltaTime, 0, vInput * speed * Time.deltaTime);
     }
 }
